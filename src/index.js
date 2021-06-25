@@ -27,16 +27,27 @@ function App() {
     <div className="App">
       <div className="user-deets">
         <img src={user.avatar} alt={user.name} />
-        <br />
-        <br />
-        {user.name}
-        <ul>
-          <li>Location: {user.location}</li>
-          <li>Food Type: {user.foodType}</li>
-          <li>Age: {user.age}</li>
-          <li>Likes: {user.likes}</li>
-          <li>Twitter Handle: @{user.twitterUsername}</li>
-        </ul>
+        <h3>{user.name}</h3>
+        <p>
+          <strong>Location</strong>
+          {user.location}
+        </p>
+        <p>
+          <strong>Eats</strong>
+          {user.foodType}
+        </p>
+        <p>
+          <strong>Age</strong>
+          {user.age}
+        </p>
+        <p>
+          <strong>Likes</strong>
+          {user.likes}
+        </p>
+        <p>
+          <strong>Twitter</strong>
+          <a href="http://www.twitter.com/">@{user.twitterUsername}</a>
+        </p>
       </div>
 
       <ScotchInfoBar />
