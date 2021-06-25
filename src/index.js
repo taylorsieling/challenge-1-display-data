@@ -46,7 +46,9 @@ function App() {
         </p>
         <p>
           <strong>Twitter</strong>
-          <a href="http://www.twitter.com/">@{user.twitterUsername}</a>
+          <a href={`http://www.twitter.com/${user.twitterUsername}`}>
+            @{user.twitterUsername}
+          </a>
         </p>
       </div>
 
